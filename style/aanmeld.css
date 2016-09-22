@@ -93,14 +93,14 @@ section {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    color: white;
+    color: black;
     margin-top: 0.5em;
     font-size: 1.25em;
     line-height: 0.7;
 }
 
 section a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -108,12 +108,32 @@ section p:last-child {
     text-decoration: underline;
 }
 
-form span:nth-child(2) {
+span {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    margin-top: 0.5em;
+    font-size: 1.25em;
+    line-height: 0.7;
+}
+
+span a {
+    color: white;
+    text-decoration: none;
+}
+
+span p:last-child {
+    text-decoration: underline;
+}
+
+form section:nth-child(2) {
     background-color: white;
     border-radius: 0.75em;
     margin-top: 0.5em;
-    padding: 1em;
-    width: 17.5em;
+    padding: 0.2em;
+    width: 15em;
     -ms-transform: rotate(-3deg);
     /* IE 9 */
     -webkit-transform: rotate(-3deg);
@@ -122,12 +142,12 @@ form span:nth-child(2) {
     /* Standard syntax */
 }
 
-form span {
+form section {
     background-color: white;
     border-radius: 0.75em;
     margin-top: 0.5em;
-    padding: 1em;
-    width: 17.5em;
+    padding: 0.2em;
+    width: 15em;
     -ms-transform: rotate(3deg);
     /* IE 9 */
     -webkit-transform: rotate(3deg);
@@ -136,8 +156,6 @@ form span {
     /* Standard syntax */
 }
 
-@media (min-width: 500px) {}
-
 @media (min-width: 500px) {
     h1 {
         font-size: 5em;
@@ -145,7 +163,12 @@ form span {
     .aanmaken {
         margin-top: 1.5em;
     }
-    span {
+    form section:nth-child(2) {
+        width: 20em;
+        padding: 1em;
+    }
+    form section {
+        padding: 1em;
         width: 20em;
     }
 }
